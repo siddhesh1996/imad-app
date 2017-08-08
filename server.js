@@ -84,7 +84,7 @@ app.get('/:articleName', function (req,res){
     //articleName=Article-one
     //article[articleName]={} content object for article one
     var articleName=req.params.articleName;
-   res.send(createtemplate(articles[articleName]));
+   res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
