@@ -3,7 +3,7 @@ console.log('Loaded!');
 //To change the text in html
 
 var element = document.getElementById('main-text');
-element.innerHTML ='Welcome Click Me to move to Right!--->>';
+element.innerHTML ='Welcome Click Me & Monster to move to Right!--->>';
 
 
 var img= document.getElementById('sid');
