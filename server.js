@@ -5,6 +5,58 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne= {
+    title: 'Article-One',
+    heading: 'This is my first aticle',
+    date: 'Aug 8 2017',
+    content: ` <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.
+    </p>
+    
+    
+    <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.
+    </p>
+    
+    
+    <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.This is my first article.
+    </p>
+    `
+    
+};
+function createTemplate(data){
+    title=data.title;
+    heading=data.heading;
+    date=data.date;
+    content=data.content;
+
+var htmlTemplate=`<html>
+    <head>
+<title>$(title)</title>
+<meta name="viewport" content="width-device-width,intial-scale=1"/>
+<link href="/ui/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <hr/>
+    <div>
+    <h1>$(heading)</h1>
+    </div>
+    <div>
+        
+        $(date)
+    </div>
+    <div>
+    $(content)
+    </div>
+    </div>
+    
+</body>
+</html>
+`;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -14,7 +66,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one', function (req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+   res.send(createtemplate(articleOne));
 });
 
 app.get('/article-two', function (req,res){
