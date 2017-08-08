@@ -22,7 +22,7 @@ var articles = {
     `
     },
  'article-two':{
-      title: 'Article-Two',
+    title: 'Article-Two',
     heading: 'This is my second aticle',
     date: 'Aug 10 2017',
     content:'<p>This is the content for my second article </p>'
@@ -30,7 +30,7 @@ var articles = {
      
  } ,
  'article-three':{
-      title: 'Article-Three',
+    title: 'Article-Three',
     heading: 'This is my Third aticle',
     date: 'Aug  11 2017',
     content:'<p>This is the content for my third article<p>'
@@ -48,7 +48,7 @@ var htmlTemplate=`<html>
     <head>
 <title>
 
- $(title)
+ ${content}
 
 </title>
 <meta name="viewport" content="width-device-width,intial-scale=1"/>
@@ -62,14 +62,14 @@ var htmlTemplate=`<html>
     </div>
     <hr/>
     <div>
-    <h1>$(heading)</h1>
+    <h1>${heading}</h1>
     </div>
     <div>
         
-        $(date)
+        ${date}
     </div>
     <div>
-    $(content)
+    ${content}
     </div>
     </div>
     
