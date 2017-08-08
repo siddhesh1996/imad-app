@@ -15,11 +15,11 @@ function moveRight(){
     element.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function(){
-   var interval = setInterval(moveRight, 50);
+   var interval = setInterval(moveRight, 10);
   
     
 };
 
 element.onclick =function(){
-    var interval1 = setInterval(moveRight, 50);
+    var interval1 = setInterval(moveRight, 10);
 };
