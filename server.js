@@ -46,7 +46,11 @@ function createTemplate(data){
 
 var htmlTemplate=`<html>
     <head>
-<title>$(title)</title>
+<title>
+
+ $(title)
+
+</title>
 <meta name="viewport" content="width-device-width,intial-scale=1"/>
 <link href="/ui/style.css" rel="stylesheet" />
 
@@ -72,6 +76,7 @@ var htmlTemplate=`<html>
 </body>
 </html>
 `;
+return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
