@@ -32,6 +32,7 @@ body {
     
 }
 .links{
+    font-family: sans-serif;
     color: red;
     margin:0 auto;
     padding-top:10px;
