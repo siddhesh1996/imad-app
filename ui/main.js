@@ -27,7 +27,7 @@
      };
      
      //make the request
-     request.open('GET','http://http://ksiddhesh96sk.imad.hasura-app.io/counter',true);
+     request.open('GET','http://ksiddhesh96sk.imad.hasura-app.io/counter',true);
      request.send(null);
      
      
