@@ -10,7 +10,7 @@
     
      
      //render the variable in correct span
-      httpRequest.onreadystatechange = function(){
+      request.onreadystatechange = function(){
        //code here
        if(request.readyState === XMLHttpRequest.DONE){
        //take some action
