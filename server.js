@@ -97,9 +97,9 @@ app.get('/ui/main.js', function (req, res) {
 });
 
  var names=[];
- app.get('/submit-name/', function(req,res){
+ app.get('/submit-name/', function(req,res){// submit-name?name=XXXX
      //Get the name from the request object
-     var name= req.query.name; //TODO
+     var name= req.query.name; 
      names.push(name);
      //JOSN: Javascript object notation
      
